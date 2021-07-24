@@ -1,0 +1,12 @@
+// FONTS 
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+// VARIABLES 
+$primary-color-100: hsl(204, 43%, 93%); // Light Gray
+$primary-color-200: hsl(218, 22%, 67%); // Grayish Blue
+
+// FILE IMPORTS
+@import 'component';
+@import 'media';
+@import 'general';
+@import 'styles';

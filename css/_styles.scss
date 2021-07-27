@@ -1,0 +1,31 @@
+section {
+  // background color for each section
+  &:nth-of-type(1) {background-color: $neutral-color-100;}
+  &:nth-of-type(2) {background-color: $primary-color-100;}
+  &:nth-of-type(3) {background-color: hsl(179, 48%, 49%);} 
+
+  // each section containing first child h3 element
+  &:nth-of-type(1) > h3:nth-of-type(1) {color: $primary-color-100;}
+  &:nth-of-type(2) > h3:nth-of-type(1) {color: $neutral-color-100;}
+  &:nth-of-type(3) > h3:nth-of-type(1) {color: $neutral-color-100;}
+
+  // each section containing paragraph elements
+  &:nth-of-type(1) > p:nth-of-type(1) {color: $primary-color-200;}
+  &:nth-of-type(1) > p:nth-of-type(2) {color: $neutral-color-200;}
+  &:nth-of-type(2) > p:nth-of-type(1) {color: $neutral-color-100;}
+  &:nth-of-type(3) > p:nth-of-type(1) {color: $neutral-color-100;}
+}
+
+.section-two {
+  h2 {color: $neutral-color-100;}
+  span {color: $neutral-color-200}
+
+  .button {
+    color: $neutral-color-100;
+    background-color: $primary-color-200; 
+    text-decoration: none;
+  }
+}
+
+
+

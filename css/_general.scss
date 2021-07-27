@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: sans-serif;
+  background-color: $neutral-color-200;
+}
+
 .attribution {
   font-size: 11px; text-align: center; 
   a { color: hsl(228, 45%, 44%); }

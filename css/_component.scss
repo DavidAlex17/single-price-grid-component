@@ -1,19 +1,12 @@
-/*.grid {
+.grid {
   display: grid;
-  justify-content: center;
-  align-content: center;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-
-  grid-template-areas:
-        ".section-one"
-        ".section-two"
-        ".section-three";
+  grid-template-rows: 100px 100px 100px;
 }
-*/
+
 
 .card {
+  max-width: 85%;
   height: 100%;
-  width: 90%;
   margin: 5rem auto;
 }

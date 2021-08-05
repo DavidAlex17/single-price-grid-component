@@ -1,7 +1,8 @@
 .grid {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 100px 100px 100px;
+  justify-content: center;
+  align-content: center;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 
@@ -9,4 +10,12 @@
   max-width: 85%;
   height: 100%;
   margin: 5rem auto;
+}
+
+.button {
+  border-radius: 5px;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  display: block;
 }

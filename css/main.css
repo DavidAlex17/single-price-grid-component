@@ -15,15 +15,21 @@
   max-width: 85%;
   height: 100%;
   margin: 5rem auto;
-  border-radius: 10px;
+  border-radius: 0.2rem;
+  overflow: hidden;
 }
 
 section {
   padding: 1rem;
 }
 
+section:nth-of-type(3) > p:nth-of-type(1) {
+  width: 65%;
+}
+
 section > * {
-  margin-bottom: 0.5rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.5rem;
 }
 
 .button {
@@ -34,13 +40,6 @@ section > * {
   text-align: center;
 }
 
-/*
-section {
-  &:nth-of-type(3) > p:nth-of-type(1) {
-    max-width: 18%;
-  }
-}
-*/
 @media (width: 768px) {
   body {
     height: 100vh;
@@ -120,6 +119,10 @@ section:nth-of-type(2) > p:nth-of-type(1) {
 
 section:nth-of-type(3) > p:nth-of-type(1) {
   color: #e5eff5;
+}
+
+section:nth-of-type(1) > p:nth-of-type(2) {
+  line-height: 1.5;
 }
 
 .section-two h2 {

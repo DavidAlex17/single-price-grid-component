@@ -16,16 +16,19 @@ section {
   &:nth-of-type(2) {background-color: $primary-color-100;}
   &:nth-of-type(3) {background-color: hsl(179, 48%, 49%);} 
 
-  // each section containing first child h3 element
+  // each section (x) containing first child h3 element
   &:nth-of-type(1) > h3:nth-of-type(1) {color: $primary-color-100;}
   &:nth-of-type(2) > h3:nth-of-type(1) {color: $neutral-color-100;}
   &:nth-of-type(3) > h3:nth-of-type(1) {color: $neutral-color-100;}
 
-  // each section containing paragraph elements
+  // each section (x) containing paragraph (x) elements
   &:nth-of-type(1) > p:nth-of-type(1) {color: $primary-color-200;}
   &:nth-of-type(1) > p:nth-of-type(2) {color: $neutral-color-200;}
   &:nth-of-type(2) > p:nth-of-type(1) {color: $neutral-color-100;}
   &:nth-of-type(3) > p:nth-of-type(1) {color: $neutral-color-100;}
+
+  // section one second paragraph
+  &:nth-of-type(1) > p:nth-of-type(2) {line-height: 1.5;}
 }
 
 

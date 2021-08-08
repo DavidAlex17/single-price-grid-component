@@ -1,14 +1,8 @@
-h3 {
-  font-weight: bolder;
-}
+h3 {font-weight: bold;}
 
-h2 {
-  font-weight: normal;
-}
+h2 {font-weight: normal;}
 
-p {
-  font-weight: lighter;
-}
+p {font-weight: lighter;}
 
 section {
   // background color for each section
@@ -38,7 +32,7 @@ section {
   span {
     color: $neutral-color-200;
     vertical-align: middle;
-    font: 0.6em sans-serif;
+    font: bold 0.6em sans-serif;
   }
 
   .button {

@@ -1,3 +1,20 @@
-@media (width: 768px) {
+@media (min-width: 768px) {
   body {height: 100vh;}
+
+  .card {max-width: 60%;}
+
+  section {padding: 1.5rem;}
+
+  .grid {
+    height: 86%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:  "section-one section-one"
+                          "section-two section-three";
+  }
+
+  .section-one {grid-area: section-one;}
+  .section-two {grid-area: section-two;}
+  .section-three {grid-area: section-three;}
+  
 }

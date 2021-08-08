@@ -23,6 +23,10 @@ section {
   padding: 1rem;
 }
 
+section:nth-of-type(1) > p:nth-of-type(2) {
+  width: 100%;
+}
+
 section:nth-of-type(3) > p:nth-of-type(1) {
   width: 65%;
 }
@@ -40,9 +44,39 @@ section > * {
   text-align: center;
 }
 
-@media (width: 768px) {
+@media (min-width: 768px) {
   body {
     height: 100vh;
+  }
+  .card {
+    max-width: 60%;
+  }
+  section {
+    padding: 1.5rem;
+  }
+  .grid {
+    height: 86%;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "section-one section-one" "section-two section-three";
+  }
+  .section-one {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: section-one;
+  }
+  .section-two {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: section-two;
+  }
+  .section-three {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: section-three;
   }
 }
 
@@ -70,7 +104,7 @@ body {
 }
 
 h3 {
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 h2 {
@@ -132,7 +166,7 @@ section:nth-of-type(1) > p:nth-of-type(2) {
 .section-two span {
   color: #98a6bd;
   vertical-align: middle;
-  font: 0.6em sans-serif;
+  font: bold 0.6em sans-serif;
 }
 
 .section-two .button {

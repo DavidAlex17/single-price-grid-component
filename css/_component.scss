@@ -24,6 +24,7 @@ section {
   &:nth-of-type(3) > p:nth-of-type(1) {width: 65%;}
 }
 
+// all child elements for every section
 section > * {
   padding-top: 0.6rem;
   padding-bottom: 0.5rem;
